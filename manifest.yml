@@ -1,0 +1,5 @@
+dependencies:
+  python:
+    - pexpect
+  system:
+    all: php7.4-cli
