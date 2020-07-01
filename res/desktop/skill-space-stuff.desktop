@@ -1,0 +1,10 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Name=Space Debris Tracker
+Exec=mycroft-gui-app --hideTextInput --skill=skill-space-stuff.jarbasskills.home
+Icon=icon.png
+Categories=VoiceApp
+StartupNotify=false
+X-DBUS-StartupType=None
+X-KDE-StartupNotify=false

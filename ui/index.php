@@ -52,9 +52,7 @@ header('Content-Type: text/html; charset=utf-8');
     </div>
     <div id="menu-right" class="menubar">
       <div id="menu-help" class="menu-item">
-        <div class="menu-title">Help</div>
-        <div id="help-box" class="menubox submenu">
-          <span class="box-header">Legend</span>
+        <div id="help-box">
           <ul id="legend">
             <li>
                <img class="dot" src="/dot-red.png"></img>
@@ -62,43 +60,17 @@ header('Content-Type: text/html; charset=utf-8');
              </li>
             <li>
               <img class="dot" src="/dot-blue.png"></img>
-              Rocket body
+              Rocket
             </li>
             <li>
               <img class="dot" src="/dot-grey.png"></img>
               Debris
             </li>
           </ul>
-          <ul id="controls-info">
-            <li>
-              Left/Right click and drag to rotate camera
-            </li>
-            <li> Mousewheel to scroll </li>
-            <li>
-              Left click to select an object
-            </li>
-          </ul>
-        
+
         </div>
       </div>
-      <div id="menu-about" class="menu-item">
-        <div class="menu-title">About</div>
-        <div id="about-box" class="menubox submenu">
-          <span class="box-header">Stuff in Space</span>
-          <p>Stuff in Space is a realtime 3D map of objects in Earth orbit, visualized using WebGL.</p>
-          
-          <p>The website updates daily with orbit data from <a href="http://www.space-track.org">Space-Track.org</a> 
-          and uses the excellent <a href="https://github.com/shashwatak/satellite-js">satellite.js</a> Javascript library
-          to calculate satellite positions.</p>
-          
-          <span class="box-header">About the author</span>
-        <!--  <p>My name is James Yoder; I'm an alumnus of <a href="http://www.usfirst.org/roboticsprograms/frc"><i>FIRST</i> Robotics
-          Competition </a> (FRC) <a href="http://team624.org">Team 624</a> and an incoming Electrical and Computer Engineering freshman at the 
-          University of Texas at Austin. </p> -->
-          <p>Contact: <a href="mailto:info@stuffin.space">info@stuffin.space</a></p>
-          <p>See Stuff in Space on <a href="https://github.com/jeyoder/ThingsInSpace"> GitHub </a></p>
-        </div>
-      </div>
+
     </div>
       <div id="search-results"></div>
     <div id="sat-hoverbox">(none)</div>

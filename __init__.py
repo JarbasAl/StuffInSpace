@@ -2,13 +2,14 @@ from mycroft import intent_file_handler, intent_handler, MycroftSkill
 from mycroft.skills.core import resting_screen_handler
 from os.path import join, dirname
 import pexpect
+from mycroft.util import create_daemon
 
 
 class SpaceStuffSkill(MycroftSkill):
 
     def initialize(self):
         self.running = False
-        self.serve_page()
+        create_daemon(self.serve_page)
 
     def serve_page(self):
         prev = ""
